@@ -20,7 +20,7 @@ public class Account {
     }
 
     // método para definir saldo do objeto
-    public void setBalance(int balance){
+    public void setBalance(double balance){
         this.balance = balance;
     }
 
