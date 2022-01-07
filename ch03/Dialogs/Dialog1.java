@@ -25,6 +25,9 @@ public class Dialog1 {
 
         // lê o valor inserido pelo usuário na caixa de diálogo e guarda em input
         String input = JOptionPane.showInputDialog(messageShow);
+
+        // substituir vírgulas por pontos
+        input = NumericalData.commaToPoint(input);
         
         // variável isNumeric is True para input Numérico e false caso contrário.
         boolean isNumeric = NumericalData.isNumber(input);
