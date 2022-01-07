@@ -16,7 +16,12 @@ public class Dialog1 {
         JOptionPane.showMessageDialog(null, message);
     }
 
-    public static double inputNumber(String messageShow){
+    public static String input(String messageShow) {
+        String input = JOptionPane.showInputDialog(messageShow);
+        return input;
+    }
+
+    public static double inputNumber(String messageShow) {
 
         // lê o valor inserido pelo usuário na caixa de diálogo e guarda em input
         String input = JOptionPane.showInputDialog(messageShow);
