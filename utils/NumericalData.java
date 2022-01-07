@@ -15,4 +15,9 @@ public class NumericalData {
     public static String commaToPoint(String text) {
         return text.replace(",", ".");
     }
+
+    public static boolean hasNumber(String text) {
+       boolean result = text.matches(".*\\d+.*");
+       return result;
+    }
 }
