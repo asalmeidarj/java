@@ -1,6 +1,8 @@
 /**
  * Classe de Matrizes contendo algumas operações elementares
  * com matrizes.
+ * 
+ * Autor: Alessandro Almeida
  */
 package utils;
 
