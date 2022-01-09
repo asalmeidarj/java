@@ -5,7 +5,6 @@ package utils;
 
 import java.util.List;
 import java.util.ArrayList;
-// import java.util.Collections;
 import java.util.Collections;
 
 public class CombinatorialAnalysis {
@@ -24,6 +23,19 @@ public class CombinatorialAnalysis {
         return number  * factorial(number-1);
     }
 
+    // método retorna o número de inversões em uma sequência de naturais
+    public int inversions(List<Integer> list){
+        int inv = 0;
+        for (int i = 0; i < list.size(); i++) {
+            for(int k = i+1; k < list.size(); k++){
+                if(list.get(i) > list.get(k)){
+                    inv++;
+                }
+            }
+        }
+        return inv;
+    }
+
     // método retorna uma lista com todas as permutações de N elementos
     // com os algarismos de 1 a N.
     public List<List<Integer>> permutationsN(int number){
@@ -39,7 +51,7 @@ public class CombinatorialAnalysis {
     }
     private void createPermutations(List<Integer> array, int pos){
         if(array.size() == pos){
-            this.clearHeapList();
+            this.clearPermutations();
         }
         if (pos == 1){
             //criação de Lista auxiliar com nova permutação.
@@ -64,7 +76,7 @@ public class CombinatorialAnalysis {
         }
     }
 
-    private void clearHeapList(){
+    private void clearPermutations(){
         this.permutations.clear();
     }
 
