@@ -1,3 +1,18 @@
+/**
+ * Classe Triângulo permite criar objetos triângulos e
+ * métodos que fazem algumas operações elementares como:
+ * calcular medidas dos lados, perímetro, baricentro, etc.
+ * 
+ * Obs.: Para tais métodos foi preciso utilizar classe auxiliares
+ * para os cálculos de matrizes e até mesmo de análise combinatória. 
+ * Para o cálculo da área do triângulo foi usado geometria analítica
+ * o qual utiliza alguns teoremas de algebrar linear
+ * envolvendo matrizes.
+ * 
+ * Autor: Alessandro Almeida
+ */
+
+ 
 package ch04.triangle;
 
 import java.util.ArrayList;
