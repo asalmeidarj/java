@@ -1,5 +1,7 @@
 /**
  * Classe para cálculos de análises combinatórias
+ * 
+ * Autor: Alessandro Almeida
  */
 package utils;
 
@@ -44,7 +46,7 @@ public class CombinatorialAnalysis {
     }
 
     // método cria uma lista com todas as permutações de um lista de inteiros
-    // e armazena a lista na variável heapList
+    // e armazena a lista na variável permutations
     private void createPermutations(int number){
         List<Integer> array = generateList(number);
         createPermutations(array, array.size());
