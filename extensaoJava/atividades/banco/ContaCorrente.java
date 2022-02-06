@@ -1,6 +1,6 @@
 
 public class ContaCorrente extends Conta{
-	public final String ATENDIMENTO = "Não prioritário";
+	public final String ATENDIMENTO = "Nï¿½o prioritï¿½rio";
 	
 	public ContaCorrente(String titular, double saldo) {
 		super(titular, saldo);
@@ -10,6 +10,7 @@ public class ContaCorrente extends Conta{
 		
 		if(valor < 0) {
 			Imprimir.texto(MsgErro.SAQUE_NEGATIVO_NULO);
+			return;
 		}
 		
 		if(valor <= getSaldo()) {
